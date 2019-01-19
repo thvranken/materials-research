@@ -105,7 +105,7 @@ class TGAFile(object):
             plt.plot(self.data_array[x], percent, color=color, linewidth=1.5, label=self.shortname)
         else:
             plt.plot(self.data_array[x], percent, color=self.color, linewidth=1.5, label=self.shortname)
-        plt.ylabel(r'Weight Percent / %', fontsize=12)
+        plt.ylabel(r'Weight Percent (%)', fontsize=12)
         plt.xlabel(self.signal[x], fontsize=12)
         legend = plt.legend(loc=1, frameon = 1, fontsize=15, framealpha=1)
         if legend:
